@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>File Upload Form</title>
+  <link href="/static/css/style.css" rel='stylesheet' type='text/css' />
+  <link href="/static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <!-- Bootstrap CSS -->
+  <link href="/static/css/bootstrap.css" rel="stylesheet" integrity="sha384-gnBE4g5AodR8mpRO2gv2qDYsBr5rjp8Sy6+I7XKOQeAEXm9ttAIgZqjtvzHmV1rJ" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container">
+    <h1>File Upload Form</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="fileInput" class="form-label">Choose File</label>
+        <input type="file" class="form-control" id="fileInput" name="fileInput">
+      </div>
+      <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+  </div>
+
+  <h1>Main Page</h1>
+  <p>This is the main page content.</p>
+  <div class="embedded-page">
+      <iframe src="./gdp_per_capita1.1.html" frameborder="0" width="800" height="600"></iframe>
+  </div>
+  <p>More main page content here.</p>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="/static/js/bootstrap.bundle.min.js" integrity="sha384-C+atVu9a11b7fmebkVmxJjJFCSWIXnZFJsJ4VlYctvUZ6xBr1n6uhUtnCZsX3/A+" crossorigin="anonymous"></script>
+</body>
+</html>
